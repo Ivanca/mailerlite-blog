@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$mynewcolor:#FFF;
+
+.navbar .btn-primary {
+    @include button-variant($mynewcolor, $mynewcolor, $mynewcolor, lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: var(--green);
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-info {
+    background-color: var(--green) !important;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+span.date {
+    display: block;
+    color: #bbb;
+    padding-bottom: 0.9em;
+}
